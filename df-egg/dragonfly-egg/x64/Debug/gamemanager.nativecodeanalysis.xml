@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DEFECTS>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\users\hsmarch\source\repos\dragonfly\df-egg\dragonfly-egg\</FILEPATH>
+      <FILENAME>event.h</FILENAME>
+      <LINE>9</LINE>
+      <COLUMN>37</COLUMN>
+    </SFA>
+    <DEFECTCODE>26426</DEFECTCODE>
+    <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
+    <FUNCTION>df::`dynamic initializer for 'UNDEFINED_EVENT''</FUNCTION>
+    <DECORATED>??__EUNDEFINED_EVENT@df@@YAXXZ</DECORATED>
+    <FUNCLINE>9</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\users\hsmarch\source\repos\dragonfly\df-egg\dragonfly-egg\</FILEPATH>
+      <FILENAME>event.h</FILENAME>
+      <LINE>9</LINE>
+      <COLUMN>19</COLUMN>
+    </SFA>
+    <DEFECTCODE>26426</DEFECTCODE>
+    <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::~basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
+    <FUNCTION>df::`dynamic atexit destructor for 'UNDEFINED_EVENT''</FUNCTION>
+    <DECORATED>??__FUNDEFINED_EVENT@df@@YAXXZ</DECORATED>
+    <FUNCLINE>9</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\users\hsmarch\source\repos\dragonfly\df-egg\dragonfly-egg\</FILEPATH>
+      <FILENAME>logmanager.h</FILENAME>
+      <LINE>11</LINE>
+      <COLUMN>34</COLUMN>
+    </SFA>
+    <DEFECTCODE>26426</DEFECTCODE>
+    <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
+    <FUNCTION>df::`dynamic initializer for 'LOGFILE_NAME''</FUNCTION>
+    <DECORATED>??__ELOGFILE_NAME@df@@YAXXZ</DECORATED>
+    <FUNCLINE>11</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\users\hsmarch\source\repos\dragonfly\df-egg\dragonfly-egg\</FILEPATH>
+      <FILENAME>logmanager.h</FILENAME>
+      <LINE>11</LINE>
+      <COLUMN>19</COLUMN>
+    </SFA>
+    <DEFECTCODE>26426</DEFECTCODE>
+    <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::~basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
+    <FUNCTION>df::`dynamic atexit destructor for 'LOGFILE_NAME''</FUNCTION>
+    <DECORATED>??__FLOGFILE_NAME@df@@YAXXZ</DECORATED>
+    <FUNCLINE>11</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\users\hsmarch\source\repos\dragonfly\df-egg\dragonfly-egg\</FILEPATH>
+      <FILENAME>eventstep.h</FILENAME>
+      <LINE>9</LINE>
+      <COLUMN>32</COLUMN>
+    </SFA>
+    <DEFECTCODE>26426</DEFECTCODE>
+    <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
+    <FUNCTION>df::`dynamic initializer for 'STEP_EVENT''</FUNCTION>
+    <DECORATED>??__ESTEP_EVENT@df@@YAXXZ</DECORATED>
+    <FUNCLINE>9</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\users\hsmarch\source\repos\dragonfly\df-egg\dragonfly-egg\</FILEPATH>
+      <FILENAME>eventstep.h</FILENAME>
+      <LINE>9</LINE>
+      <COLUMN>19</COLUMN>
+    </SFA>
+    <DEFECTCODE>26426</DEFECTCODE>
+    <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::~basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
+    <FUNCTION>df::`dynamic atexit destructor for 'STEP_EVENT''</FUNCTION>
+    <DECORATED>??__FSTEP_EVENT@df@@YAXXZ</DECORATED>
+    <FUNCLINE>9</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\users\hsmarch\source\repos\dragonfly\df-egg\dragonfly-egg\</FILEPATH>
+      <FILENAME>gamemanager.cpp</FILENAME>
+      <LINE>16</LINE>
+      <COLUMN>17</COLUMN>
+    </SFA>
+    <DEFECTCODE>26455</DEFECTCODE>
+    <DESCRIPTION>Default constructor may not throw. Declare it 'noexcept' (f.6).</DESCRIPTION>
+    <FUNCTION>df::GameManager::{ctor}</FUNCTION>
+    <DECORATED>??0GameManager@df@@AEAA@XZ</DECORATED>
+    <FUNCLINE>16</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\users\hsmarch\source\repos\dragonfly\df-egg\dragonfly-egg\</FILEPATH>
+      <FILENAME>gamemanager.cpp</FILENAME>
+      <LINE>29</LINE>
+      <COLUMN>21</COLUMN>
+    </SFA>
+    <DEFECTCODE>26433</DEFECTCODE>
+    <DESCRIPTION>Function 'df::GameManager::startUp' should be marked with 'override' (c.128).</DESCRIPTION>
+    <FUNCTION>df::GameManager::startUp</FUNCTION>
+    <DECORATED>?startUp@GameManager@df@@UEAAHXZ</DECORATED>
+    <FUNCLINE>29</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\users\hsmarch\source\repos\dragonfly\df-egg\dragonfly-egg\</FILEPATH>
+      <FILENAME>gamemanager.cpp</FILENAME>
+      <LINE>38</LINE>
+      <COLUMN>22</COLUMN>
+    </SFA>
+    <DEFECTCODE>26433</DEFECTCODE>
+    <DESCRIPTION>Function 'df::GameManager::shutDown' should be marked with 'override' (c.128).</DESCRIPTION>
+    <FUNCTION>df::GameManager::shutDown</FUNCTION>
+    <DECORATED>?shutDown@GameManager@df@@UEAAXXZ</DECORATED>
+    <FUNCLINE>38</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\users\hsmarch\source\repos\dragonfly\df-egg\dragonfly-egg\</FILEPATH>
+      <FILENAME>gamemanager.cpp</FILENAME>
+      <LINE>50</LINE>
+      <COLUMN>10</COLUMN>
+    </SFA>
+    <DEFECTCODE>26494</DEFECTCODE>
+    <DESCRIPTION>Variable 'loop_time' is uninitialized. Always initialize an object (type.5).</DESCRIPTION>
+    <FUNCTION>df::GameManager::run</FUNCTION>
+    <DECORATED>?run@GameManager@df@@QEAAXXZ</DECORATED>
+    <FUNCLINE>48</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\users\hsmarch\source\repos\dragonfly\df-egg\dragonfly-egg\</FILEPATH>
+      <FILENAME>gamemanager.cpp</FILENAME>
+      <LINE>51</LINE>
+      <COLUMN>10</COLUMN>
+    </SFA>
+    <DEFECTCODE>26494</DEFECTCODE>
+    <DESCRIPTION>Variable 'intended_sleep_time' is uninitialized. Always initialize an object (type.5).</DESCRIPTION>
+    <FUNCTION>df::GameManager::run</FUNCTION>
+    <DECORATED>?run@GameManager@df@@QEAAXXZ</DECORATED>
+    <FUNCLINE>48</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\users\hsmarch\source\repos\dragonfly\df-egg\dragonfly-egg\</FILEPATH>
+      <FILENAME>gamemanager.cpp</FILENAME>
+      <LINE>52</LINE>
+      <COLUMN>10</COLUMN>
+    </SFA>
+    <DEFECTCODE>26494</DEFECTCODE>
+    <DESCRIPTION>Variable 'actual_sleep_time' is uninitialized. Always initialize an object (type.5).</DESCRIPTION>
+    <FUNCTION>df::GameManager::run</FUNCTION>
+    <DECORATED>?run@GameManager@df@@QEAAXXZ</DECORATED>
+    <FUNCLINE>48</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\users\hsmarch\source\repos\dragonfly\df-egg\dragonfly-egg\</FILEPATH>
+      <FILENAME>gamemanager.cpp</FILENAME>
+      <LINE>49</LINE>
+      <COLUMN>25</COLUMN>
+    </SFA>
+    <DEFECTCODE>26409</DEFECTCODE>
+    <DESCRIPTION>Avoid calling new and delete explicitly, use std::make_unique&lt;T&gt; instead (r.11).</DESCRIPTION>
+    <FUNCTION>df::GameManager::run</FUNCTION>
+    <DECORATED>?run@GameManager@df@@QEAAXXZ</DECORATED>
+    <FUNCLINE>48</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\users\hsmarch\source\repos\dragonfly\df-egg\dragonfly-egg\</FILEPATH>
+      <FILENAME>gamemanager.cpp</FILENAME>
+      <LINE>49</LINE>
+      <COLUMN>25</COLUMN>
+    </SFA>
+    <DEFECTCODE>26400</DEFECTCODE>
+    <DESCRIPTION>Do not assign the result of an allocation or a function call with an owner&lt;T&gt; return value to a raw pointer, use owner&lt;T&gt; instead (i.11).</DESCRIPTION>
+    <FUNCTION>df::GameManager::run</FUNCTION>
+    <DECORATED>?run@GameManager@df@@QEAAXXZ</DECORATED>
+    <FUNCLINE>48</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\users\hsmarch\source\repos\dragonfly\df-egg\dragonfly-egg\</FILEPATH>
+      <FILENAME>gamemanager.cpp</FILENAME>
+      <LINE>60</LINE>
+      <COLUMN>30</COLUMN>
+    </SFA>
+    <DEFECTCODE>26409</DEFECTCODE>
+    <DESCRIPTION>Avoid calling new and delete explicitly, use std::make_unique&lt;T&gt; instead (r.11).</DESCRIPTION>
+    <FUNCTION>df::GameManager::run</FUNCTION>
+    <DECORATED>?run@GameManager@df@@QEAAXXZ</DECORATED>
+    <FUNCLINE>48</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\users\hsmarch\source\repos\dragonfly\df-egg\dragonfly-egg\</FILEPATH>
+      <FILENAME>gamemanager.cpp</FILENAME>
+      <LINE>60</LINE>
+      <COLUMN>30</COLUMN>
+    </SFA>
+    <DEFECTCODE>26400</DEFECTCODE>
+    <DESCRIPTION>Do not assign the result of an allocation or a function call with an owner&lt;T&gt; return value to a raw pointer, use owner&lt;T&gt; instead (i.11).</DESCRIPTION>
+    <FUNCTION>df::GameManager::run</FUNCTION>
+    <DECORATED>?run@GameManager@df@@QEAAXXZ</DECORATED>
+    <FUNCLINE>48</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\users\hsmarch\source\repos\dragonfly\df-egg\dragonfly-egg\</FILEPATH>
+      <FILENAME>gamemanager.cpp</FILENAME>
+      <LINE>54</LINE>
+      <COLUMN>16</COLUMN>
+    </SFA>
+    <DEFECTCODE>26496</DEFECTCODE>
+    <DESCRIPTION>The variable 'l_mngr' is assigned only once, mark it as const (con.4).</DESCRIPTION>
+    <FUNCTION>df::GameManager::run</FUNCTION>
+    <DECORATED>?run@GameManager@df@@QEAAXXZ</DECORATED>
+    <FUNCLINE>48</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\users\hsmarch\source\repos\dragonfly\df-egg\dragonfly-egg\</FILEPATH>
+      <FILENAME>gamemanager.cpp</FILENAME>
+      <LINE>60</LINE>
+      <COLUMN>12</COLUMN>
+    </SFA>
+    <DEFECTCODE>26462</DEFECTCODE>
+    <DESCRIPTION>The value pointed to by 's' is assigned only once, mark it as a pointer to const (con.4).</DESCRIPTION>
+    <FUNCTION>df::GameManager::run</FUNCTION>
+    <DECORATED>?run@GameManager@df@@QEAAXXZ</DECORATED>
+    <FUNCLINE>48</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\users\hsmarch\source\repos\dragonfly\df-egg\dragonfly-egg\</FILEPATH>
+      <FILENAME>gamemanager.cpp</FILENAME>
+      <LINE>76</LINE>
+      <COLUMN>22</COLUMN>
+    </SFA>
+    <DEFECTCODE>26440</DEFECTCODE>
+    <DESCRIPTION>Function 'df::GameManager::setGameOver' can be declared 'noexcept' (f.6).</DESCRIPTION>
+    <FUNCTION>df::GameManager::setGameOver</FUNCTION>
+    <DECORATED>?setGameOver@GameManager@df@@QEAAX_N@Z</DECORATED>
+    <FUNCLINE>76</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\users\hsmarch\source\repos\dragonfly\df-egg\dragonfly-egg\</FILEPATH>
+      <FILENAME>gamemanager.cpp</FILENAME>
+      <LINE>80</LINE>
+      <COLUMN>22</COLUMN>
+    </SFA>
+    <DEFECTCODE>26440</DEFECTCODE>
+    <DESCRIPTION>Function 'df::GameManager::getGameOver' can be declared 'noexcept' (f.6).</DESCRIPTION>
+    <FUNCTION>df::GameManager::getGameOver</FUNCTION>
+    <DECORATED>?getGameOver@GameManager@df@@QEBA_NXZ</DECORATED>
+    <FUNCLINE>80</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\users\hsmarch\source\repos\dragonfly\df-egg\dragonfly-egg\</FILEPATH>
+      <FILENAME>gamemanager.cpp</FILENAME>
+      <LINE>84</LINE>
+      <COLUMN>21</COLUMN>
+    </SFA>
+    <DEFECTCODE>26440</DEFECTCODE>
+    <DESCRIPTION>Function 'df::GameManager::getFrameTime' can be declared 'noexcept' (f.6).</DESCRIPTION>
+    <FUNCTION>df::GameManager::getFrameTime</FUNCTION>
+    <DECORATED>?getFrameTime@GameManager@df@@QEBAHXZ</DECORATED>
+    <FUNCLINE>84</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+</DEFECTS>

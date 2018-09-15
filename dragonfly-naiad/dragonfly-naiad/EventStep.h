@@ -4,12 +4,12 @@
 //Engine Includes
 #include "Event.h"
 
-namespace df {
-
+namespace df
+{
 	const std::string STEP_EVENT = "df::stepEvent";
 
-	class EventStep : public df::Event {
-
+	class EventStep : public Event
+	{
 	private:
 		int step_count;
 
@@ -21,8 +21,6 @@ namespace df {
 		void setStepCount(int new_step_count);
 
 		int getStepCount() const;
-
 	};
-
 }
 #endif

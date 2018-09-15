@@ -7,9 +7,10 @@
 #include "Vector.h"
 #include "Event.h"
 
-namespace df {
-
-	class Object {
+namespace df
+{
+	class Object
+	{
 	private:
 		int id;
 		std::string type;
@@ -19,7 +20,7 @@ namespace df {
 		Object();
 		virtual ~Object();
 
-		virtual int EventHandler(const df::Event *p_e);
+		virtual int EventHandler(const Event* p_e);
 
 		void setId(int new_id);
 		int getId() const;
@@ -29,9 +30,7 @@ namespace df {
 
 		void setPosition(Vector new_pos);
 		Vector getPosition() const;
-
 	};
-
 }
 
 #endif

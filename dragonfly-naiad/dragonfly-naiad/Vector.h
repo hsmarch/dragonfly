@@ -1,7 +1,8 @@
 #ifndef __Vector_H__
 #define __Vector_H__
 
-class Vector {
+class Vector
+{
 private:
 	int x;
 	int y;

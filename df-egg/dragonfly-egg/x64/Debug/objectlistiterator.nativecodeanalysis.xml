@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DEFECTS>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\users\hsmarch\source\repos\dragonfly\df-egg\dragonfly-egg\</FILEPATH>
+      <FILENAME>event.h</FILENAME>
+      <LINE>9</LINE>
+      <COLUMN>37</COLUMN>
+    </SFA>
+    <DEFECTCODE>26426</DEFECTCODE>
+    <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
+    <FUNCTION>df::`dynamic initializer for 'UNDEFINED_EVENT''</FUNCTION>
+    <DECORATED>??__EUNDEFINED_EVENT@df@@YAXXZ</DECORATED>
+    <FUNCLINE>9</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\users\hsmarch\source\repos\dragonfly\df-egg\dragonfly-egg\</FILEPATH>
+      <FILENAME>event.h</FILENAME>
+      <LINE>9</LINE>
+      <COLUMN>19</COLUMN>
+    </SFA>
+    <DEFECTCODE>26426</DEFECTCODE>
+    <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::~basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
+    <FUNCTION>df::`dynamic atexit destructor for 'UNDEFINED_EVENT''</FUNCTION>
+    <DECORATED>??__FUNDEFINED_EVENT@df@@YAXXZ</DECORATED>
+    <FUNCLINE>9</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\users\hsmarch\source\repos\dragonfly\df-egg\dragonfly-egg\</FILEPATH>
+      <FILENAME>objectlistiterator.cpp</FILENAME>
+      <LINE>8</LINE>
+      <COLUMN>20</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>Variable 'ObjectListIterator::index' is uninitialized. Always initialize a member variable (type.6).</DESCRIPTION>
+    <FUNCTION>ObjectListIterator::{ctor}</FUNCTION>
+    <DECORATED>??0ObjectListIterator@@AEAA@XZ</DECORATED>
+    <FUNCLINE>8</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\users\hsmarch\source\repos\dragonfly\df-egg\dragonfly-egg\</FILEPATH>
+      <FILENAME>objectlistiterator.cpp</FILENAME>
+      <LINE>8</LINE>
+      <COLUMN>20</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>Variable 'ObjectListIterator::p_list' is uninitialized. Always initialize a member variable (type.6).</DESCRIPTION>
+    <FUNCTION>ObjectListIterator::{ctor}</FUNCTION>
+    <DECORATED>??0ObjectListIterator@@AEAA@XZ</DECORATED>
+    <FUNCLINE>8</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\users\hsmarch\source\repos\dragonfly\df-egg\dragonfly-egg\</FILEPATH>
+      <FILENAME>objectlistiterator.cpp</FILENAME>
+      <LINE>8</LINE>
+      <COLUMN>20</COLUMN>
+    </SFA>
+    <DEFECTCODE>26455</DEFECTCODE>
+    <DESCRIPTION>Default constructor may not throw. Declare it 'noexcept' (f.6).</DESCRIPTION>
+    <FUNCTION>ObjectListIterator::{ctor}</FUNCTION>
+    <DECORATED>??0ObjectListIterator@@AEAA@XZ</DECORATED>
+    <FUNCLINE>8</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\users\hsmarch\source\repos\dragonfly\df-egg\dragonfly-egg\</FILEPATH>
+      <FILENAME>objectlistiterator.cpp</FILENAME>
+      <LINE>12</LINE>
+      <COLUMN>20</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>Variable 'ObjectListIterator::index' is uninitialized. Always initialize a member variable (type.6).</DESCRIPTION>
+    <FUNCTION>ObjectListIterator::{ctor}</FUNCTION>
+    <DECORATED>??0ObjectListIterator@@QEAA@PEBVObjectList@@@Z</DECORATED>
+    <FUNCLINE>12</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\users\hsmarch\source\repos\dragonfly\df-egg\dragonfly-egg\</FILEPATH>
+      <FILENAME>objectlistiterator.cpp</FILENAME>
+      <LINE>17</LINE>
+      <COLUMN>25</COLUMN>
+    </SFA>
+    <DEFECTCODE>26440</DEFECTCODE>
+    <DESCRIPTION>Function 'ObjectListIterator::first' can be declared 'noexcept' (f.6).</DESCRIPTION>
+    <FUNCTION>ObjectListIterator::first</FUNCTION>
+    <DECORATED>?first@ObjectListIterator@@QEAAXXZ</DECORATED>
+    <FUNCLINE>17</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\users\hsmarch\source\repos\dragonfly\df-egg\dragonfly-egg\</FILEPATH>
+      <FILENAME>objectlistiterator.cpp</FILENAME>
+      <LINE>32</LINE>
+      <COLUMN>1</COLUMN>
+    </SFA>
+    <DEFECTCODE>26482</DEFECTCODE>
+    <DESCRIPTION>Only index into arrays using constant expressions (bounds.2).</DESCRIPTION>
+    <FUNCTION>ObjectListIterator::currentObject</FUNCTION>
+    <DECORATED>?currentObject@ObjectListIterator@@QEBAPEAVObject@df@@XZ</DECORATED>
+    <FUNCLINE>31</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\users\hsmarch\source\repos\dragonfly\df-egg\dragonfly-egg\</FILEPATH>
+      <FILENAME>objectlistiterator.cpp</FILENAME>
+      <LINE>32</LINE>
+      <COLUMN>26</COLUMN>
+    </SFA>
+    <DEFECTCODE>26446</DEFECTCODE>
+    <DESCRIPTION>Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).</DESCRIPTION>
+    <FUNCTION>ObjectListIterator::currentObject</FUNCTION>
+    <DECORATED>?currentObject@ObjectListIterator@@QEBAPEAVObject@df@@XZ</DECORATED>
+    <FUNCLINE>31</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\users\hsmarch\source\repos\dragonfly\df-egg\dragonfly-egg\</FILEPATH>
+      <FILENAME>objectlistiterator.cpp</FILENAME>
+      <LINE>31</LINE>
+      <COLUMN>32</COLUMN>
+    </SFA>
+    <DEFECTCODE>26440</DEFECTCODE>
+    <DESCRIPTION>Function 'ObjectListIterator::currentObject' can be declared 'noexcept' (f.6).</DESCRIPTION>
+    <FUNCTION>ObjectListIterator::currentObject</FUNCTION>
+    <DECORATED>?currentObject@ObjectListIterator@@QEBAPEAVObject@df@@XZ</DECORATED>
+    <FUNCLINE>31</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+</DEFECTS>

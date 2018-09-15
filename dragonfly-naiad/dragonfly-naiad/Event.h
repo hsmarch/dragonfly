@@ -4,12 +4,12 @@
 //System Includes
 #include <string>
 
-namespace df{
+namespace df
+{
+	const std::string UNDEFINED_EVENT = "UndefinedEvent";
 
-	const std::string UNDEFINED_EVENT = "df::undefinedEvent";
-
-	class Event {
-
+	class Event
+	{
 	private:
 		std::string event_type;
 
@@ -23,7 +23,6 @@ namespace df{
 
 		std::string getType() const;
 	};
-
 }
 
 #endif

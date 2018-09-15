@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DEFECTS>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\users\hsmarch\source\repos\dragonfly\df-egg\dragonfly-egg\</FILEPATH>
+      <FILENAME>event.h</FILENAME>
+      <LINE>9</LINE>
+      <COLUMN>37</COLUMN>
+    </SFA>
+    <DEFECTCODE>26426</DEFECTCODE>
+    <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
+    <FUNCTION>df::`dynamic initializer for 'UNDEFINED_EVENT''</FUNCTION>
+    <DECORATED>??__EUNDEFINED_EVENT@df@@YAXXZ</DECORATED>
+    <FUNCLINE>9</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\users\hsmarch\source\repos\dragonfly\df-egg\dragonfly-egg\</FILEPATH>
+      <FILENAME>event.h</FILENAME>
+      <LINE>9</LINE>
+      <COLUMN>19</COLUMN>
+    </SFA>
+    <DEFECTCODE>26426</DEFECTCODE>
+    <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::~basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
+    <FUNCTION>df::`dynamic atexit destructor for 'UNDEFINED_EVENT''</FUNCTION>
+    <DECORATED>??__FUNDEFINED_EVENT@df@@YAXXZ</DECORATED>
+    <FUNCLINE>9</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\users\hsmarch\source\repos\dragonfly\df-egg\dragonfly-egg\</FILEPATH>
+      <FILENAME>logmanager.h</FILENAME>
+      <LINE>11</LINE>
+      <COLUMN>34</COLUMN>
+    </SFA>
+    <DEFECTCODE>26426</DEFECTCODE>
+    <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
+    <FUNCTION>df::`dynamic initializer for 'LOGFILE_NAME''</FUNCTION>
+    <DECORATED>??__ELOGFILE_NAME@df@@YAXXZ</DECORATED>
+    <FUNCLINE>11</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\users\hsmarch\source\repos\dragonfly\df-egg\dragonfly-egg\</FILEPATH>
+      <FILENAME>logmanager.h</FILENAME>
+      <LINE>11</LINE>
+      <COLUMN>19</COLUMN>
+    </SFA>
+    <DEFECTCODE>26426</DEFECTCODE>
+    <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::~basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
+    <FUNCTION>df::`dynamic atexit destructor for 'LOGFILE_NAME''</FUNCTION>
+    <DECORATED>??__FLOGFILE_NAME@df@@YAXXZ</DECORATED>
+    <FUNCLINE>11</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\users\hsmarch\source\repos\dragonfly\df-egg\dragonfly-egg\</FILEPATH>
+      <FILENAME>object.cpp</FILENAME>
+      <LINE>12</LINE>
+      <COLUMN>12</COLUMN>
+    </SFA>
+    <DEFECTCODE>26455</DEFECTCODE>
+    <DESCRIPTION>Default constructor may not throw. Declare it 'noexcept' (f.6).</DESCRIPTION>
+    <FUNCTION>df::Object::{ctor}</FUNCTION>
+    <DECORATED>??0Object@df@@QEAA@XZ</DECORATED>
+    <FUNCLINE>12</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\users\hsmarch\source\repos\dragonfly\df-egg\dragonfly-egg\</FILEPATH>
+      <FILENAME>object.cpp</FILENAME>
+      <LINE>21</LINE>
+      <COLUMN>13</COLUMN>
+    </SFA>
+    <DEFECTCODE>26432</DEFECTCODE>
+    <DESCRIPTION>If you define or delete any default operation in the type 'class df::Object', define or delete them all (c.21).</DESCRIPTION>
+    <FUNCTION>df::Object::{dtor}</FUNCTION>
+    <DECORATED>??1Object@df@@UEAA@XZ</DECORATED>
+    <FUNCLINE>21</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\users\hsmarch\source\repos\dragonfly\df-egg\dragonfly-egg\</FILEPATH>
+      <FILENAME>object.cpp</FILENAME>
+      <LINE>22</LINE>
+      <COLUMN>46</COLUMN>
+    </SFA>
+    <DEFECTCODE>26447</DEFECTCODE>
+    <DESCRIPTION>The function is declared 'noexcept' but calls function 'getInstance()' which may throw exceptions (f.6).</DESCRIPTION>
+    <FUNCTION>df::Object::{dtor}</FUNCTION>
+    <DECORATED>??1Object@df@@UEAA@XZ</DECORATED>
+    <FUNCLINE>21</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\users\hsmarch\source\repos\dragonfly\df-egg\dragonfly-egg\</FILEPATH>
+      <FILENAME>object.cpp</FILENAME>
+      <LINE>23</LINE>
+      <COLUMN>20</COLUMN>
+    </SFA>
+    <DEFECTCODE>26447</DEFECTCODE>
+    <DESCRIPTION>The function is declared 'noexcept' but calls function 'removeObject()' which may throw exceptions (f.6).</DESCRIPTION>
+    <FUNCTION>df::Object::{dtor}</FUNCTION>
+    <DECORATED>??1Object@df@@UEAA@XZ</DECORATED>
+    <FUNCLINE>21</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\users\hsmarch\source\repos\dragonfly\df-egg\dragonfly-egg\</FILEPATH>
+      <FILENAME>object.cpp</FILENAME>
+      <LINE>26</LINE>
+      <COLUMN>16</COLUMN>
+    </SFA>
+    <DEFECTCODE>26440</DEFECTCODE>
+    <DESCRIPTION>Function 'df::Object::EventHandler' can be declared 'noexcept' (f.6).</DESCRIPTION>
+    <FUNCTION>df::Object::EventHandler</FUNCTION>
+    <DECORATED>?EventHandler@Object@df@@UEAAHPEBVEvent@2@@Z</DECORATED>
+    <FUNCLINE>26</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\users\hsmarch\source\repos\dragonfly\df-egg\dragonfly-egg\</FILEPATH>
+      <FILENAME>object.cpp</FILENAME>
+      <LINE>30</LINE>
+      <COLUMN>17</COLUMN>
+    </SFA>
+    <DEFECTCODE>26440</DEFECTCODE>
+    <DESCRIPTION>Function 'df::Object::setId' can be declared 'noexcept' (f.6).</DESCRIPTION>
+    <FUNCTION>df::Object::setId</FUNCTION>
+    <DECORATED>?setId@Object@df@@QEAAXH@Z</DECORATED>
+    <FUNCLINE>30</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\users\hsmarch\source\repos\dragonfly\df-egg\dragonfly-egg\</FILEPATH>
+      <FILENAME>object.cpp</FILENAME>
+      <LINE>34</LINE>
+      <COLUMN>16</COLUMN>
+    </SFA>
+    <DEFECTCODE>26440</DEFECTCODE>
+    <DESCRIPTION>Function 'df::Object::getId' can be declared 'noexcept' (f.6).</DESCRIPTION>
+    <FUNCTION>df::Object::getId</FUNCTION>
+    <DECORATED>?getId@Object@df@@QEBAHXZ</DECORATED>
+    <FUNCLINE>34</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\users\hsmarch\source\repos\dragonfly\df-egg\dragonfly-egg\</FILEPATH>
+      <FILENAME>object.cpp</FILENAME>
+      <LINE>46</LINE>
+      <COLUMN>17</COLUMN>
+    </SFA>
+    <DEFECTCODE>26440</DEFECTCODE>
+    <DESCRIPTION>Function 'df::Object::setPosition' can be declared 'noexcept' (f.6).</DESCRIPTION>
+    <FUNCTION>df::Object::setPosition</FUNCTION>
+    <DECORATED>?setPosition@Object@df@@QEAAXVVector@@@Z</DECORATED>
+    <FUNCLINE>46</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\users\hsmarch\source\repos\dragonfly\df-egg\dragonfly-egg\</FILEPATH>
+      <FILENAME>object.cpp</FILENAME>
+      <LINE>49</LINE>
+      <COLUMN>19</COLUMN>
+    </SFA>
+    <DEFECTCODE>26440</DEFECTCODE>
+    <DESCRIPTION>Function 'df::Object::getPosition' can be declared 'noexcept' (f.6).</DESCRIPTION>
+    <FUNCTION>df::Object::getPosition</FUNCTION>
+    <DECORATED>?getPosition@Object@df@@QEBA?AVVector@@XZ</DECORATED>
+    <FUNCLINE>49</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+</DEFECTS>

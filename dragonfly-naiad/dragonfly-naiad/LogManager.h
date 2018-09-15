@@ -7,25 +7,26 @@
 //Engine Includes
 #include "Manager.h"
 
-namespace df{
+namespace df
+{
 	const std::string LOGFILE_NAME = "DF_TEST.log";
 
-	class LogManager : public df::Manager {
-
+	class LogManager : public Manager
+	{
 	private:
 		LogManager();
 		LogManager(LogManager const&);
-		void operator = (LogManager const&);
+		void operator =(LogManager const&);
 
-		FILE *p_f;
+		FILE* p_f;
 
 	public:
 		~LogManager();
-		static LogManager &getInstance();
-		int startUp();
-		void shutDown();
+		static LogManager& getInstance();
+		int startUp() override;
+		void shutDown() override;
 		void setFlush(bool do_flush = true);
-		int writeLog(const char *fmt, ...) const;
+		int writeLog(const char* fmt, ...) const;
 		bool do_flush;
 	};
 }

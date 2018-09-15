@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DEFECTS>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\users\hsmarch\source\repos\dragonfly\df-egg\dragonfly-egg\</FILEPATH>
+      <FILENAME>clock.cpp</FILENAME>
+      <LINE>15</LINE>
+      <COLUMN>7</COLUMN>
+    </SFA>
+    <DEFECTCODE>26455</DEFECTCODE>
+    <DESCRIPTION>Default constructor may not throw. Declare it 'noexcept' (f.6).</DESCRIPTION>
+    <FUNCTION>Clock::{ctor}</FUNCTION>
+    <DECORATED>??0Clock@@QEAA@XZ</DECORATED>
+    <FUNCLINE>15</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\users\hsmarch\source\repos\dragonfly\df-egg\dragonfly-egg\</FILEPATH>
+      <FILENAME>clock.cpp</FILENAME>
+      <LINE>26</LINE>
+      <COLUMN>10</COLUMN>
+    </SFA>
+    <DEFECTCODE>26496</DEFECTCODE>
+    <DESCRIPTION>The variable 'current_time' is assigned only once, mark it as const (con.4).</DESCRIPTION>
+    <FUNCTION>Clock::delta</FUNCTION>
+    <DECORATED>?delta@Clock@@QEAAJXZ</DECORATED>
+    <FUNCLINE>23</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\users\hsmarch\source\repos\dragonfly\df-egg\dragonfly-egg\</FILEPATH>
+      <FILENAME>clock.cpp</FILENAME>
+      <LINE>29</LINE>
+      <COLUMN>10</COLUMN>
+    </SFA>
+    <DEFECTCODE>26496</DEFECTCODE>
+    <DESCRIPTION>The variable 'return_time' is assigned only once, mark it as const (con.4).</DESCRIPTION>
+    <FUNCTION>Clock::delta</FUNCTION>
+    <DECORATED>?delta@Clock@@QEAAJXZ</DECORATED>
+    <FUNCLINE>23</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\users\hsmarch\source\repos\dragonfly\df-egg\dragonfly-egg\</FILEPATH>
+      <FILENAME>clock.cpp</FILENAME>
+      <LINE>23</LINE>
+      <COLUMN>16</COLUMN>
+    </SFA>
+    <DEFECTCODE>26440</DEFECTCODE>
+    <DESCRIPTION>Function 'Clock::delta' can be declared 'noexcept' (f.6).</DESCRIPTION>
+    <FUNCTION>Clock::delta</FUNCTION>
+    <DECORATED>?delta@Clock@@QEAAJXZ</DECORATED>
+    <FUNCLINE>23</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\users\hsmarch\source\repos\dragonfly\df-egg\dragonfly-egg\</FILEPATH>
+      <FILENAME>clock.cpp</FILENAME>
+      <LINE>37</LINE>
+      <COLUMN>10</COLUMN>
+    </SFA>
+    <DEFECTCODE>26496</DEFECTCODE>
+    <DESCRIPTION>The variable 'current_time' is assigned only once, mark it as const (con.4).</DESCRIPTION>
+    <FUNCTION>Clock::split</FUNCTION>
+    <DECORATED>?split@Clock@@QEBAJXZ</DECORATED>
+    <FUNCLINE>34</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\users\hsmarch\source\repos\dragonfly\df-egg\dragonfly-egg\</FILEPATH>
+      <FILENAME>clock.cpp</FILENAME>
+      <LINE>40</LINE>
+      <COLUMN>10</COLUMN>
+    </SFA>
+    <DEFECTCODE>26496</DEFECTCODE>
+    <DESCRIPTION>The variable 'return_time' is assigned only once, mark it as const (con.4).</DESCRIPTION>
+    <FUNCTION>Clock::split</FUNCTION>
+    <DECORATED>?split@Clock@@QEBAJXZ</DECORATED>
+    <FUNCLINE>34</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\users\hsmarch\source\repos\dragonfly\df-egg\dragonfly-egg\</FILEPATH>
+      <FILENAME>clock.cpp</FILENAME>
+      <LINE>34</LINE>
+      <COLUMN>16</COLUMN>
+    </SFA>
+    <DEFECTCODE>26440</DEFECTCODE>
+    <DESCRIPTION>Function 'Clock::split' can be declared 'noexcept' (f.6).</DESCRIPTION>
+    <FUNCTION>Clock::split</FUNCTION>
+    <DECORATED>?split@Clock@@QEBAJXZ</DECORATED>
+    <FUNCLINE>34</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+</DEFECTS>

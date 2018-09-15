@@ -10,11 +10,11 @@ const int MAX_OBJECTS = 5000;
 class df::Object;
 class ObjectListIterator;
 
-class ObjectList {
-
+class ObjectList
+{
 private:
 	int count;
-	df::Object *list[MAX_OBJECTS];
+	df::Object* list[MAX_OBJECTS];
 
 public:
 	friend class ObjectListIterator;
@@ -23,9 +23,9 @@ public:
 
 	ObjectList operator+(ObjectList list);
 
-	int insert(df::Object *p_o);
+	int insert(df::Object* p_o);
 
-	int remove(df::Object *p_o);
+	int remove(df::Object* p_o);
 
 	void clear();
 

@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DEFECTS>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\users\hsmarch\source\repos\dragonfly\df-egg\dragonfly-egg\</FILEPATH>
+      <FILENAME>logmanager.h</FILENAME>
+      <LINE>11</LINE>
+      <COLUMN>34</COLUMN>
+    </SFA>
+    <DEFECTCODE>26426</DEFECTCODE>
+    <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
+    <FUNCTION>df::`dynamic initializer for 'LOGFILE_NAME''</FUNCTION>
+    <DECORATED>??__ELOGFILE_NAME@df@@YAXXZ</DECORATED>
+    <FUNCLINE>11</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\users\hsmarch\source\repos\dragonfly\df-egg\dragonfly-egg\</FILEPATH>
+      <FILENAME>logmanager.h</FILENAME>
+      <LINE>11</LINE>
+      <COLUMN>19</COLUMN>
+    </SFA>
+    <DEFECTCODE>26426</DEFECTCODE>
+    <DESCRIPTION>Global initializer calls a non-constexpr function 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::~basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;' (i.22).</DESCRIPTION>
+    <FUNCTION>df::`dynamic atexit destructor for 'LOGFILE_NAME''</FUNCTION>
+    <DECORATED>??__FLOGFILE_NAME@df@@YAXXZ</DECORATED>
+    <FUNCLINE>11</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\users\hsmarch\source\repos\dragonfly\df-egg\dragonfly-egg\</FILEPATH>
+      <FILENAME>logmanager.cpp</FILENAME>
+      <LINE>14</LINE>
+      <COLUMN>7</COLUMN>
+    </SFA>
+    <DEFECTCODE>26477</DEFECTCODE>
+    <DESCRIPTION>Use 'nullptr' rather than 0 or NULL (es.47).</DESCRIPTION>
+    <FUNCTION>df::LogManager::{ctor}</FUNCTION>
+    <DECORATED>??0LogManager@df@@AEAA@XZ</DECORATED>
+    <FUNCLINE>12</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\users\hsmarch\source\repos\dragonfly\df-egg\dragonfly-egg\</FILEPATH>
+      <FILENAME>logmanager.cpp</FILENAME>
+      <LINE>12</LINE>
+      <COLUMN>16</COLUMN>
+    </SFA>
+    <DEFECTCODE>26455</DEFECTCODE>
+    <DESCRIPTION>Default constructor may not throw. Declare it 'noexcept' (f.6).</DESCRIPTION>
+    <FUNCTION>df::LogManager::{ctor}</FUNCTION>
+    <DECORATED>??0LogManager@df@@AEAA@XZ</DECORATED>
+    <FUNCLINE>12</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\users\hsmarch\source\repos\dragonfly\df-egg\dragonfly-egg\</FILEPATH>
+      <FILENAME>logmanager.cpp</FILENAME>
+      <LINE>18</LINE>
+      <COLUMN>17</COLUMN>
+    </SFA>
+    <DEFECTCODE>26432</DEFECTCODE>
+    <DESCRIPTION>If you define or delete any default operation in the type 'class df::LogManager', define or delete them all (c.21).</DESCRIPTION>
+    <FUNCTION>df::LogManager::{dtor}</FUNCTION>
+    <DECORATED>??1LogManager@df@@UEAA@XZ</DECORATED>
+    <FUNCLINE>18</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\users\hsmarch\source\repos\dragonfly\df-egg\dragonfly-egg\</FILEPATH>
+      <FILENAME>logmanager.cpp</FILENAME>
+      <LINE>25</LINE>
+      <COLUMN>9</COLUMN>
+    </SFA>
+    <DEFECTCODE>26486</DEFECTCODE>
+    <DESCRIPTION>Don't pass a pointer that may be invalid to a function. Parameter 3 'args' in call to 'vfprintf' may be invalid (lifetime.1).</DESCRIPTION>
+    <FUNCTION>df::LogManager::writeLog</FUNCTION>
+    <DECORATED>?writeLog@LogManager@df@@QEBAHPEBDZZ</DECORATED>
+    <FUNCLINE>22</FUNCLINE>
+    <PATH>
+      <SFA>
+        <FILEPATH>c:\users\hsmarch\source\repos\dragonfly\df-egg\dragonfly-egg\</FILEPATH>
+        <FILENAME>logmanager.cpp</FILENAME>
+        <LINE>23</LINE>
+        <COLUMN>9</COLUMN>
+      </SFA>
+    </PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\users\hsmarch\source\repos\dragonfly\df-egg\dragonfly-egg\</FILEPATH>
+      <FILENAME>logmanager.cpp</FILENAME>
+      <LINE>26</LINE>
+      <COLUMN>1</COLUMN>
+    </SFA>
+    <DEFECTCODE>26477</DEFECTCODE>
+    <DESCRIPTION>Use 'nullptr' rather than 0 or NULL (es.47).</DESCRIPTION>
+    <FUNCTION>df::LogManager::writeLog</FUNCTION>
+    <DECORATED>?writeLog@LogManager@df@@QEBAHPEBDZZ</DECORATED>
+    <FUNCLINE>22</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\users\hsmarch\source\repos\dragonfly\df-egg\dragonfly-egg\</FILEPATH>
+      <FILENAME>logmanager.cpp</FILENAME>
+      <LINE>22</LINE>
+      <COLUMN>20</COLUMN>
+    </SFA>
+    <DEFECTCODE>26440</DEFECTCODE>
+    <DESCRIPTION>Function 'df::LogManager::writeLog' can be declared 'noexcept' (f.6).</DESCRIPTION>
+    <FUNCTION>df::LogManager::writeLog</FUNCTION>
+    <DECORATED>?writeLog@LogManager@df@@QEBAHPEBDZZ</DECORATED>
+    <FUNCLINE>22</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\users\hsmarch\source\repos\dragonfly\df-egg\dragonfly-egg\</FILEPATH>
+      <FILENAME>logmanager.cpp</FILENAME>
+      <LINE>34</LINE>
+      <COLUMN>23</COLUMN>
+    </SFA>
+    <DEFECTCODE>26426</DEFECTCODE>
+    <DESCRIPTION>Global initializer calls a non-constexpr function 'df::LogManager::~LogManager' (i.22).</DESCRIPTION>
+    <FUNCTION>`df::LogManager::getInstance'::`2'::`dynamic atexit destructor for 'l_mInstance''</FUNCTION>
+    <DECORATED>??__Fl_mInstance@?1??getInstance@LogManager@df@@SAAEAV12@XZ@YAXXZ</DECORATED>
+    <FUNCLINE>36</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\users\hsmarch\source\repos\dragonfly\df-egg\dragonfly-egg\</FILEPATH>
+      <FILENAME>logmanager.cpp</FILENAME>
+      <LINE>38</LINE>
+      <COLUMN>20</COLUMN>
+    </SFA>
+    <DEFECTCODE>26433</DEFECTCODE>
+    <DESCRIPTION>Function 'df::LogManager::startUp' should be marked with 'override' (c.128).</DESCRIPTION>
+    <FUNCTION>df::LogManager::startUp</FUNCTION>
+    <DECORATED>?startUp@LogManager@df@@UEAAHXZ</DECORATED>
+    <FUNCLINE>38</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\users\hsmarch\source\repos\dragonfly\df-egg\dragonfly-egg\</FILEPATH>
+      <FILENAME>logmanager.cpp</FILENAME>
+      <LINE>44</LINE>
+      <COLUMN>21</COLUMN>
+    </SFA>
+    <DEFECTCODE>26433</DEFECTCODE>
+    <DESCRIPTION>Function 'df::LogManager::shutDown' should be marked with 'override' (c.128).</DESCRIPTION>
+    <FUNCTION>df::LogManager::shutDown</FUNCTION>
+    <DECORATED>?shutDown@LogManager@df@@UEAAXXZ</DECORATED>
+    <FUNCLINE>44</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\users\hsmarch\source\repos\dragonfly\df-egg\dragonfly-egg\</FILEPATH>
+      <FILENAME>logmanager.cpp</FILENAME>
+      <LINE>49</LINE>
+      <COLUMN>21</COLUMN>
+    </SFA>
+    <DEFECTCODE>26440</DEFECTCODE>
+    <DESCRIPTION>Function 'df::LogManager::setFlush' can be declared 'noexcept' (f.6).</DESCRIPTION>
+    <FUNCTION>df::LogManager::setFlush</FUNCTION>
+    <DECORATED>?setFlush@LogManager@df@@QEAAX_N@Z</DECORATED>
+    <FUNCLINE>49</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+</DEFECTS>

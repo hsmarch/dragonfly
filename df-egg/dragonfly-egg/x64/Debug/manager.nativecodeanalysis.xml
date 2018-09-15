@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DEFECTS>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\users\hsmarch\source\repos\dragonfly\df-egg\dragonfly-egg\</FILEPATH>
+      <FILENAME>manager.cpp</FILENAME>
+      <LINE>8</LINE>
+      <COLUMN>13</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>Variable 'df::Manager::is_started' is uninitialized. Always initialize a member variable (type.6).</DESCRIPTION>
+    <FUNCTION>df::Manager::{ctor}</FUNCTION>
+    <DECORATED>??0Manager@df@@QEAA@XZ</DECORATED>
+    <FUNCLINE>8</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\users\hsmarch\source\repos\dragonfly\df-egg\dragonfly-egg\</FILEPATH>
+      <FILENAME>manager.cpp</FILENAME>
+      <LINE>8</LINE>
+      <COLUMN>13</COLUMN>
+    </SFA>
+    <DEFECTCODE>26455</DEFECTCODE>
+    <DESCRIPTION>Default constructor may not throw. Declare it 'noexcept' (f.6).</DESCRIPTION>
+    <FUNCTION>df::Manager::{ctor}</FUNCTION>
+    <DECORATED>??0Manager@df@@QEAA@XZ</DECORATED>
+    <FUNCLINE>8</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\users\hsmarch\source\repos\dragonfly\df-egg\dragonfly-egg\</FILEPATH>
+      <FILENAME>manager.cpp</FILENAME>
+      <LINE>12</LINE>
+      <COLUMN>14</COLUMN>
+    </SFA>
+    <DEFECTCODE>26432</DEFECTCODE>
+    <DESCRIPTION>If you define or delete any default operation in the type 'class df::Manager', define or delete them all (c.21).</DESCRIPTION>
+    <FUNCTION>df::Manager::{dtor}</FUNCTION>
+    <DECORATED>??1Manager@df@@UEAA@XZ</DECORATED>
+    <FUNCLINE>12</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\users\hsmarch\source\repos\dragonfly\df-egg\dragonfly-egg\</FILEPATH>
+      <FILENAME>manager.cpp</FILENAME>
+      <LINE>16</LINE>
+      <COLUMN>17</COLUMN>
+    </SFA>
+    <DEFECTCODE>26440</DEFECTCODE>
+    <DESCRIPTION>Function 'df::Manager::startUp' can be declared 'noexcept' (f.6).</DESCRIPTION>
+    <FUNCTION>df::Manager::startUp</FUNCTION>
+    <DECORATED>?startUp@Manager@df@@UEAAHXZ</DECORATED>
+    <FUNCLINE>16</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\users\hsmarch\source\repos\dragonfly\df-egg\dragonfly-egg\</FILEPATH>
+      <FILENAME>manager.cpp</FILENAME>
+      <LINE>21</LINE>
+      <COLUMN>18</COLUMN>
+    </SFA>
+    <DEFECTCODE>26440</DEFECTCODE>
+    <DESCRIPTION>Function 'df::Manager::shutDown' can be declared 'noexcept' (f.6).</DESCRIPTION>
+    <FUNCTION>df::Manager::shutDown</FUNCTION>
+    <DECORATED>?shutDown@Manager@df@@UEAAXXZ</DECORATED>
+    <FUNCLINE>21</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\users\hsmarch\source\repos\dragonfly\df-egg\dragonfly-egg\</FILEPATH>
+      <FILENAME>manager.cpp</FILENAME>
+      <LINE>26</LINE>
+      <COLUMN>18</COLUMN>
+    </SFA>
+    <DEFECTCODE>26440</DEFECTCODE>
+    <DESCRIPTION>Function 'df::Manager::isStarted' can be declared 'noexcept' (f.6).</DESCRIPTION>
+    <FUNCTION>df::Manager::isStarted</FUNCTION>
+    <DECORATED>?isStarted@Manager@df@@QEBA_NXZ</DECORATED>
+    <FUNCLINE>26</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+</DEFECTS>

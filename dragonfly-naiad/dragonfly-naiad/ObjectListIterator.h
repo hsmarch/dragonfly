@@ -7,20 +7,20 @@
 class df::Object;
 class ObjectList;
 
-class ObjectListIterator {
-
+class ObjectListIterator
+{
 private:
 	ObjectListIterator();
 	int index;
-	const ObjectList *p_list;
+	const ObjectList* p_list;
 
 public:
-	ObjectListIterator(const ObjectList *p_l);
+	ObjectListIterator(const ObjectList* p_l);
 
 	void first();
 	void next();
 	bool isDone() const;
 
-	df::Object *currentObject() const;
+	df::Object* currentObject() const;
 };
 #endif

@@ -84,7 +84,12 @@
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>C:\Users\hsmarch\source\repos\dragonfly\dragonfly-naiad\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
+    <Link>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;sfml-system-d.lib;sfml-window-d.lib;sfml-graphics-d.lib;sfml-main-d.lib;sfml-audio-d.lib;sfml-network-d.lib;Winmm.lib;Ws2_32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:\Users\hsmarch\source\repos\dragonfly\dragonfly-naiad\SFML\lib\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
@@ -117,8 +122,14 @@
   <ItemGroup>
     <ClCompile Include="Clock.cpp" />
     <ClCompile Include="Event.cpp" />
+    <ClCompile Include="EventCollision.cpp" />
+    <ClCompile Include="EventKeyboard.cpp" />
+    <ClCompile Include="EventMouse.cpp" />
+    <ClCompile Include="EventOut.cpp" />
     <ClCompile Include="EventStep.cpp" />
     <ClCompile Include="GameManager.cpp" />
+    <ClCompile Include="GraphicsManager.cpp" />
+    <ClCompile Include="InputManager.cpp" />
     <ClCompile Include="LogManager.cpp" />
     <ClCompile Include="Manager.cpp" />
     <ClCompile Include="Object.cpp" />
@@ -130,9 +141,16 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Clock.h" />
+    <ClInclude Include="Color.h" />
     <ClInclude Include="Event.h" />
+    <ClInclude Include="EventCollision.h" />
+    <ClInclude Include="EventKeyboard.h" />
+    <ClInclude Include="EventMouse.h" />
+    <ClInclude Include="EventOut.h" />
     <ClInclude Include="EventStep.h" />
     <ClInclude Include="GameManager.h" />
+    <ClInclude Include="GraphicsManager.h" />
+    <ClInclude Include="InputManager.h" />
     <ClInclude Include="LogManager.h" />
     <ClInclude Include="Manager.h" />
     <ClInclude Include="Object.h" />

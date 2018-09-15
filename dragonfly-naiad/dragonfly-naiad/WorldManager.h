@@ -5,9 +5,10 @@
 #include "Manager.h"
 #include "ObjectList.h"
 
-namespace df{
-
-	class WorldManager : public df::Manager {
+namespace df
+{
+	class WorldManager : public Manager
+	{
 	private:
 		WorldManager();
 		WorldManager(WorldManager const&);
@@ -18,24 +19,22 @@ namespace df{
 
 	public:
 
-		static WorldManager &getInstance();
+		static WorldManager& getInstance();
 
-		int startUp();
+		int startUp() override;
 
-		void shutDown();
+		void shutDown() override;
 
-		int insertObject(Object *p_o);
+		int insertObject(Object* p_o);
 
-		int removeObject(Object *p_o);
+		int removeObject(Object* p_o);
 
 		ObjectList getAllObjects(void) const;
 
 		void update();
 
-		int markForDelete(Object *p_o);
-
+		int markForDelete(Object* p_o);
 	};
-
 }
 
 #endif
