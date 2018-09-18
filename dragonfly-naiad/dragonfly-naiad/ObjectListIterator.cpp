@@ -1,39 +1,23 @@
-//
-// Dragonfly ObjectListIterator.cpp - Harrison March
-//
-
-// Engine Includes
 #include "ObjectListIterator.h"
 
-ObjectListIterator::ObjectListIterator()
-{
+df::ObjectListIterator::ObjectListIterator(const df::ObjectList* p_l) {
+  p_list = p_l;
 }
 
-ObjectListIterator::ObjectListIterator(const ObjectList* p_l)
-{
-	p_list = p_l;
-	first();
+void df::ObjectListIterator::first() {
+  index = 0;
 }
 
-void ObjectListIterator::first()
-{
-	index = 0;
+void df::ObjectListIterator::next() {
+  if(index < p_list->count) {
+    index++;
+  }
 }
 
-void ObjectListIterator::next()
-{
-	if (index < p_list->getCount())
-	{
-		index++;
-	}
+bool df::ObjectListIterator::isDone() const {
+  return (index >= p_list->count);
 }
 
-bool ObjectListIterator::isDone() const
-{
-	return (index == p_list->getCount());
-}
-
-df::Object* ObjectListIterator::currentObject() const
-{
-	return p_list->list[index];
+df::Object* df::ObjectListIterator::currentObject() const {
+  return p_list->p_obj[index];
 }

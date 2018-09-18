@@ -1,6 +1,4 @@
-#ifndef  __INPUTMANAGER_H_
-#define __INPUTMANAGER_H_
-
+#pragma once
 # include <SFML/Graphics.hpp>
 
 # include "Manager.h"
@@ -9,24 +7,20 @@
 /*
 A manager that handles graphics
 */
-namespace df
-{
-	class InputManager : public Manager
-	{
-	public:
-		static InputManager& getInstance(); //Return the InputManager
-		int startUp() override; //Start the InputManager
-		void shutDown() override; //Shut down the InputManager
-		void getInput(); //Get input from the keyboard and mouse, sending to all objects
+namespace df {
+  class InputManager : public Manager {
+    public:
+      static InputManager& getInstance(); //Return the InputManager
+      int startUp(); //Start the InputManager
+      void shutDown(); //Shut down the InputManager
+      void getInput(); //Get input from the keyboard and mouse, sending to all objects
 
-	private:
-		//Singleton stuff
-		InputManager();
-		InputManager(InputManager const&);
-		void operator=(InputManager const&);
+    private:
+      //Singleton stuff
+      InputManager();
+      InputManager(InputManager const&);
+      void operator=(InputManager const&);
 
-		sf::RenderWindow* p_window;
-	};
+      sf::RenderWindow* p_window;
+  };
 }
-#endif
-S

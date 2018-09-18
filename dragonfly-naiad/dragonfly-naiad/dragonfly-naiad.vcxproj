@@ -129,14 +129,19 @@
     <ClCompile Include="EventStep.cpp" />
     <ClCompile Include="GameManager.cpp" />
     <ClCompile Include="GraphicsManager.cpp" />
+    <ClCompile Include="GraphicsTester.cpp" />
     <ClCompile Include="InputManager.cpp" />
+    <ClCompile Include="InputTester.cpp" />
     <ClCompile Include="LogManager.cpp" />
     <ClCompile Include="Manager.cpp" />
     <ClCompile Include="Object.cpp" />
     <ClCompile Include="ObjectList.cpp" />
     <ClCompile Include="ObjectListIterator.cpp" />
+    <ClCompile Include="Project2ATester.cpp" />
     <ClCompile Include="TestDF.cpp" />
+    <ClCompile Include="TestRunner.cpp" />
     <ClCompile Include="Vector.cpp" />
+    <ClCompile Include="VelocityCollisionTester.cpp" />
     <ClCompile Include="WorldManager.cpp" />
   </ItemGroup>
   <ItemGroup>

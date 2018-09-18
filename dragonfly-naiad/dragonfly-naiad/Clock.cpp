@@ -1,45 +1,33 @@
-//
-// Dragonfly Clock.cpp - Harrison March
-//
+#include <time.h>
+#include <stdio.h>
 
-//Engine Includes
 #include "Clock.h"
-#include <Windows.h>
 
-//System Includes
-#include <ctime>
-#include <cstdio>
-
-long int previous_time;
-
-Clock::Clock()
-{
-	SYSTEMTIME init_time;
-	GetSystemTime(&init_time);
-	previous_time = (init_time.wMinute * 60 * 1000)
-		+ (init_time.wSecond * 1000)
-		+ (init_time.wMilliseconds);
+df::Clock::Clock() {
+  previous_time = getCurrentTime();
 }
 
-long int Clock::delta(void)
-{
-	SYSTEMTIME init_time;
-	GetSystemTime(&init_time);
-	long int current_time = (init_time.wMinute * 60 * 1000)
-		+ (init_time.wSecond * 1000)
-		+ (init_time.wMilliseconds);
-	long int return_time = current_time - previous_time;
-	previous_time = current_time;
-	return return_time;
+long int df::Clock::delta() {
+  auto current_time = getCurrentTime();
+  if(current_time < 0) return -1;
+
+  auto time_elapsed = current_time - previous_time;
+  previous_time = current_time;
+
+  return time_elapsed;
 }
 
-long int Clock::split(void) const
-{
-	SYSTEMTIME init_time;
-	GetSystemTime(&init_time);
-	long int current_time = (init_time.wMinute * 60 * 1000)
-		+ (init_time.wSecond * 1000)
-		+ (init_time.wMilliseconds);
-	long int return_time = current_time - previous_time;
-	return return_time;
+long int df::Clock::split() const {
+  auto current_time = getCurrentTime();
+  if(current_time < 0) return -1;
+  return current_time - previous_time;
+}
+
+long int df::Clock::getCurrentTime() const {
+  struct timespec current_time;
+  if(clock_gettime(CLOCK_REALTIME, &current_time) < 0) {
+    return -1;
+  } else {
+    return (current_time.tv_sec * 1000000) + (current_time.tv_nsec / 1000);
+  }
 }

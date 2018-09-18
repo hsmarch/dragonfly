@@ -1,15 +1,17 @@
-#ifndef __CLOCK_H__
-#define __CLOCK_H__
+#pragma once
 
-class Clock
-{
-private:
-	long int previous_time;
+/*
+The clock handles timing. All methods return in microseconds
+*/
+namespace df {
+  class Clock {
+    public:
+      Clock(); // ctor, sets previous_time to current time
+      long int delta(); // returns microseconds since last call, saving result
+      long int split() const; // returns microseconds since last call, not saving result
 
-public:
-	Clock();
-	long int delta(void);
-	long int split(void) const;
-};
-
-#endif
+    private:
+      long int previous_time;
+      long int getCurrentTime() const;
+  };
+}

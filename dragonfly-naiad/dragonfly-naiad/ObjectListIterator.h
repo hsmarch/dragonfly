@@ -1,26 +1,23 @@
-#ifndef __OBJECTLISTITERATOR_H__
-#define __OBJECTLISTITERATOR_H__
+#pragma once
 
-//Engine Includes
 #include "ObjectList.h"
+#include "Object.h"
 
-class df::Object;
-class ObjectList;
+/*
+A simplified interface for accessing an ObjectList
+*/
+namespace df {
+  class ObjectListIterator {
+    public:
+      ObjectListIterator(const ObjectList* p_l); // ctor, needs an ObjectList
+      void first(); // Go to the first object
+      void next(); // Go to the next object
+      bool isDone() const; // Check if the iterator is currently on the last item
+      Object* currentObject() const; // Return the object pointer the iterator is currently on
 
-class ObjectListIterator
-{
-private:
-	ObjectListIterator();
-	int index;
-	const ObjectList* p_list;
-
-public:
-	ObjectListIterator(const ObjectList* p_l);
-
-	void first();
-	void next();
-	bool isDone() const;
-
-	df::Object* currentObject() const;
-};
-#endif
+    private:
+      ObjectListIterator();
+      int index;
+      const ObjectList* p_list;
+  };
+}

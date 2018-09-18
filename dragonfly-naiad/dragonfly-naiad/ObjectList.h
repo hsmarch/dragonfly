@@ -1,38 +1,27 @@
-#ifndef __OBJECTLIST_H__
-#define __OBJECTLIST_H__
+#pragma once
 
-//Engine Includes
 #include "Object.h"
-#include "ObjectListIterator.h"
 
+/*
+An object list provides a simple interface for a list of objects
+*/
+namespace df {
+  const int MAX_OBJECTS = 5000;
+  class ObjectListIterator; //Forward declartion to avoid cycle
 
-const int MAX_OBJECTS = 5000;
-class df::Object;
-class ObjectListIterator;
+  class ObjectList {
+    public:
+      friend class ObjectListIterator;
+      ObjectList();
+      int insert(Object* p_o); // Add an item to the end of the list (returns 0 for success, -1 for error)
+      int remove(Object* p_o); // Remove a given item from the list (returns 0 for success, -1 for error)
+      void clear(); // Remove all objects from the list
+      int getCount() const; // Return the number of objects currently in the list
+      bool isEmpty() const; // Return whether or not the list is empty
+      bool isFull() const; // Return whether or not the list is full
 
-class ObjectList
-{
-private:
-	int count;
-	df::Object* list[MAX_OBJECTS];
-
-public:
-	friend class ObjectListIterator;
-
-	ObjectList();
-
-	ObjectList operator+(ObjectList list);
-
-	int insert(df::Object* p_o);
-
-	int remove(df::Object* p_o);
-
-	void clear();
-
-	int getCount() const;
-
-	bool isEmpty() const;
-
-	bool isFull() const;
-};
-#endif
+    private:
+      int count;
+      Object* p_obj[MAX_OBJECTS];
+  };
+}

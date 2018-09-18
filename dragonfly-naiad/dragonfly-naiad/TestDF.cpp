@@ -26,7 +26,7 @@ void test_game_manager();
 df::GameManager& game_manager = df::GameManager::getInstance();
 df::LogManager& log_manager = df::LogManager::getInstance();
 df::Object* test_obj = new df::Object();
-Vector* test_position = new Vector();
+df::Vector* test_position = new df::Vector();
 ObjectList* test_list = new ObjectList();
 df::Object* test_obj2 = new df::Object();
 

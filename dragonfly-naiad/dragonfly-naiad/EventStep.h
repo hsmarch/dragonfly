@@ -1,26 +1,20 @@
-#ifndef __EVENTSTEP_H__
-#define __EVENTSTEP_H__
+#pragma once
 
-//Engine Includes
 #include "Event.h"
 
-namespace df
-{
-	const std::string STEP_EVENT = "df::stepEvent";
+/*
+A specialized event that is broadcast at each step of the game loop
+*/
+namespace df {
+  const std::string STEP_EVENT = "df::step";
+  class EventStep : public Event {
+    public:
+      EventStep(); // ctor, default to step count of 0
+      EventStep(int init_step_count); // ctor, with step count
+      void setStepCount(int new_step_count); // update the step count
+      int getStepCount() const; // return the step count
 
-	class EventStep : public Event
-	{
-	private:
-		int step_count;
-
-	public:
-		EventStep();
-
-		EventStep(int init_step_count);
-
-		void setStepCount(int new_step_count);
-
-		int getStepCount() const;
-	};
+    private:
+      int step_count;
+  };
 }
-#endif

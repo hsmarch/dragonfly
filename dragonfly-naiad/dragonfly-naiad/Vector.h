@@ -1,22 +1,26 @@
-#ifndef __Vector_H__
-#define __Vector_H__
+#pragma once
 
-class Vector
-{
-private:
-	int x;
-	int y;
+/*
+A pair of floats with various convenience methods
+*/
+namespace df {
+  class Vector {
+    public:
+      Vector();
+      Vector(float init_x, float init_y);
+      void setX(float new_x);
+      float getX() const;
+      void setY(float new_y);
+      float getY() const;
+      void setXY(float new_x, float new_y);
+      void set(Vector new_pos);
+      float getMagnitude() const;
+      void normalize();
+      void scale(float s);
+      Vector operator+(const Vector &other) const;
 
-public:
-	Vector(int init_x, int init_y);
-	Vector();
-
-	void setX(int new_x);
-	int getX() const;
-	void setY(int new_y);
-	int getY() const;
-
-	void setXY(int new_x, int new_y);
-};
-
-#endif
+    private:
+      float x;
+      float y;
+  };
+}
